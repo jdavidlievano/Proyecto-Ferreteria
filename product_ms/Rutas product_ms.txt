@@ -1,0 +1,75 @@
+Rutas para pruebas
+
+"/product"
+GET obtiene lista de productos
+POST guarda un producto
+body
+{
+	"id": ,
+	"name": ,
+	"description": ,
+	"stock": ,
+	"price": 
+}
+
+"/product/{id}"
+GET obtiene producto por id={id}
+
+"/product/query?name={nombreProducto}"
+GET obtiene lista de productos por nombre={nombreProducto}
+
+"/product/{id}"
+DELETE elimina producto por id={id}
+
+"/product/{id}"
+PUT actualiza un producto con id={id}
+body
+{
+	"name": ,
+	"description": ,
+	"stock": ,
+	"price": 
+}
+
+"/product/{id}/stock?quantity={cantidadASumarORestar}"
+GET actualiza el stock del producto con id={id} sumando la cantidad {cantidadASumarORestar}
+
+
+
+
+
+"/movement"
+GET obtiene lista de movimientos
+POST guarda un movimiento
+body
+{
+	"id": ,
+	"userId": ,
+	"productId": ,
+	"movement": {Venta o Devolución},
+	"quantity": ,
+	"dateMovement": 
+}
+
+"/movement/{id}"
+GET obtiene movimiento por id={id}
+
+"/movement/{id}"
+DELETE elimina el movimiento por id={id}
+
+"/movement/queryuid?userid={userId}"
+GET obtiene lista de movimientos por userId={userId}
+
+"/movement/querypid?productid={productId}"
+GET obtiene lista de movimientos por productId={productId}
+
+
+
+
+
+
+
+
+
+
+
